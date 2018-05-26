@@ -1,0 +1,18 @@
+{
+  "name": "gsof-electron-utils",
+  "version": "0.0.1",
+  "description": "a electron window utils and igorne browser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "electron",
+    "browser"
+  ],
+  "author": "gaoshang",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^2.0.2"
+  }
+}
