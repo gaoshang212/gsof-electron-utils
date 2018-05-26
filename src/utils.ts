@@ -3,7 +3,7 @@ export class utils {
 
     public static get isElectronRenderer(): boolean {
         let w = window as any;
-        return w && w.process && w.process.type;
+        return w && w.process && w.process.type === 'renderer';
     }
 
     private static system(name: string) {
@@ -38,7 +38,7 @@ export class utils {
         }
 
         if (this.isWindows) {
-            window.isMaximized ? window.maximize() : window.unmaximize();
+            !window.isMaximized() ? window.maximize() : window.unmaximize();
         } else if (this.isOSX) {
             window.setFullScreen(!window.isFullScreen);
         }
