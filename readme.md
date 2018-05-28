@@ -1,4 +1,8 @@
-export declare class utils {
+# 文档
+
+## utils 方法
+
+``` javascript
     /**
      * 是否Electron Renderer
      */
@@ -35,8 +39,8 @@ export declare class utils {
      */
     static resize(width: number, height: number): void;
     /**
-     * 窗口是否可改变大小
-     * @param able true: 窗口可以改变大小, false：窗口不可以改变大小
+     * 窗口是否可拖动改变大小
+     * @param able true: 窗口可以拖动改变大小, false：窗口不可以拖动改变大小
      */
     static resizable(able: boolean): void;
     /**
@@ -48,5 +52,31 @@ export declare class utils {
      * @param num 消息数量
      */
     static setBadgeNumber(num: number): void;
-    private static system(name);
+
+```
+
+## Demo
+``` javascript
+
+let { utils } = require('gsof-electron-utils');
+
+if(utils.isWindows) {
+    //todo
 }
+
+if(utils.isOSX) {
+    //todo
+}
+
+//最大化或全屏
+utils.mac();
+
+...
+// 窗口设置大小
+utils.resize(1024, 768);
+
+//窗口大小不可改变
+utils.resizable(false);
+
+
+```

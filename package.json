@@ -1,6 +1,6 @@
 {
   "name": "gsof-electron-utils",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a electron window utils and igorne browser",
   "main": "./lib/utils.js",
   "scripts": {
